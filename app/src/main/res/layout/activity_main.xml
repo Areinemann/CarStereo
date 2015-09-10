@@ -154,8 +154,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/StationDisplay" />
+                android:text="AM 371        As - Stevie Wonder                             5:24"
+                android:id="@+id/StationDisplay"
+                android:textAlignment="center"
+                android:textIsSelectable="true"
+                android:textColor="#ff70a2ff"
+                android:textSize="40dp" />
         </LinearLayout>
 
         <SeekBar
@@ -170,25 +174,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#000000"
         android:id="@+id/BottomLayout">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
+                android:layout_gravity="center">
 
-                <ImageView
-                    android:layout_width="224dp"
-                    android:layout_height="224dp"
-                    android:id="@+id/DiskDrive"
-                    android:src="@mipmap/DiskDrive" />
+                <Button
+                    android:layout_width="562dp"
+                    android:layout_height="wrap_content"
+                    android:text="Compact Disc"
+                    android:id="@+id/DiscDrive" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -196,6 +201,65 @@
                     android:text="Eject"
                     android:id="@+id/EjectButton" />
             </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:id="@+id/SkipBack" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rewind"
+                    android:id="@+id/Rewind" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pause / Play"
+                    android:id="@+id/PausePlay" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast-Forward"
+                    android:id="@+id/FastForward" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:id="@+id/SkipForward" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:background="#333333">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power"
+                android:id="@+id/PowerButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radio / CD"
+                android:id="@+id/RadioChangeButton"
+                android:layout_gravity="right" />
         </LinearLayout>
     </LinearLayout>
 
