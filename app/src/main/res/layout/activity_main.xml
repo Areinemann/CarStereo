@@ -107,11 +107,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageButton
+                    <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/BackwardSeek"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:text="-"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -123,11 +124,12 @@
                         android:layout_column="2"
                         android:gravity="center_horizontal" />
 
-                    <ImageButton
+                    <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/ForwardSeek"
-                        android:layout_column="3" />
+                        android:layout_column="3"
+                        android:text="+" />
                 </TableRow>
 
                 <TableRow
@@ -137,16 +139,17 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="AM"
-                        android:id="@+id/AMButton"
+                        android:text="FM"
+                        android:id="@+id/FMButton"
                         android:layout_column="1" />
 
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FM"
-                        android:id="@+id/FMButton"
+                        android:text="AM"
+                        android:id="@+id/AMButton"
                         android:layout_column="3" />
+
                 </TableRow>
             </TableLayout>
 
@@ -248,11 +251,11 @@
             android:gravity="bottom"
             android:background="#333333">
 
-            <Button
+            <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Power"
-                android:id="@+id/PowerButton" />
+                android:text="on"
+                android:id="@+id/powerButton"/>
 
             <Button
                 android:layout_width="wrap_content"
